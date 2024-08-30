@@ -1,0 +1,37 @@
+<html><center>
+    <h1><b>
+    Login Page</b>
+    <p class="space"></p>
+    </h1> <br>
+    <body style="background-color: rgb(82, 148, 128);">
+    <form action="insert" method="post">
+    {% csrf_token %}
+    <label><b>Name: </b></label>
+    <input type="text" name="User ID" /> <br/>
+    <p class="space"></p>
+    <label for="browser"><b>Role:  </b></label>
+        <input list="browsers" name="Role" id="browser">
+            <datalist id="browsers">
+                <option value="HR">
+                <option value="Team Leader">
+                <option value="Manager">
+                <option value="Senior Employee">
+                <option value="Junior Employee">
+            </datalist>  <br>
+    <p class="space"></p>
+    <label><b>Password: </b></label>
+    <input type="password" name="password" /> <br/>
+    <p class="space"></p>
+    <label><b>Email: </b></label>
+    <input type="email" name="email" /> <br/>
+    <p class="space"></p>
+    <input type="submit" value="Login" /> <br>
+    <p class="space"></p>
+    <input type="submit" value="Create an Account" /> <br>
+    <p class="space"></p>
+    <input type="submit" value="Update" /> <br>
+    </form>
+    </center>
+    </body>
+    </html>
+    
